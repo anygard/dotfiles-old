@@ -1,0 +1,6 @@
+if [ -z $DOTFILES ]; then
+    export DOTFILES="~.dotfiles"
+
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+fi
