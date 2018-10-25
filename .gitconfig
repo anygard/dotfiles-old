@@ -1,0 +1,36 @@
+# This is Git's per-user configuration file.
+[user]
+    name = Anders Nygård
+    email = anders.nygard@anygard.com
+[includeIf "gitdir:~/rb/"]
+    path = .gitconfig-rb
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    pager = true
+    status = auto
+    ui = true
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+[push]
+    default = current
+[core]
+    autocrlf = input
+    pager = less -FRSX
+[alias]
+    a = add
+    c = commit
+    cm = commit -m
+    cam = commit -am
+    co = checkout
+    s = status -sb
+    st = status
+    lgg = log --graph --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(white)- %an, %ar%Creset'
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    pl = pull
+    ph = push
+[pull]
+    rebase = true
