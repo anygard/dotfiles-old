@@ -5,6 +5,9 @@ This is my dotfiles repository
 
 NOTE: if you are reading this file after cloning the repo in any other way you need to clone it again using the below instruction.
 
+setup
+-----
+
 to use it do like this
 
     cd
@@ -28,4 +31,10 @@ The last step is to switch from the install branch (master) to the "production" 
 
     dotfiles checkout dotfiles
 
-Now you are up and running.
+Note that the installation files are not present in the dotfiles branch
+Now you are up and running. 
+
+source
+------
+
+This where i got the inspiration for this setup https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/ it is also a good read if you want to know how you should use this repo.
